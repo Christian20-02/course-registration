@@ -1,9 +1,9 @@
 Team Members and What We Did
-- Christian: Student Registration page
-- Teammate 1: 
-- Teammate 2: 
-- Teammate 3: 
-- Teammate 4: 
+- Christian Owusu-achiaw: Student Registration page
+- Riyah Miah: 
+- Alex Doan: 
+- Evan Arnold: 
+
 
 What Each Page Does
 - Home: this is just the main page with links to all the other pages
