@@ -1,6 +1,6 @@
 Team Members and What We Did
 - Christian Owusu-achiaw: Student Registration page
-- Riyah Miah: 
+- Riyah Miah: Home Screen and Session Enrollment 
 - Alex Doan: 
 - Evan Arnold: 
 
