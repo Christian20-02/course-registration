@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Course Search</title>
+  <!-- Keep head includes consistent with other screens -->
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <script defer src="assets/js/app.js"></script>
+</head>
+<body>
+  <h1>Course Search</h1>
+
+  <!-- Optional: simple nav to other screens for parity during demos -->
+  <nav aria-label="Primary">
+    <a href="index.html">Home</a>
+    <a href="course-search.html" aria-current="page">Course Search</a>
+    <a href="student-registration.html">Student Registration</a>
+    <a href="instructor-schedule.html">Instructor Schedule</a>
+  </nav>
+
+  <!-- Filters -->
+  <h2>Find a Course</h2>
+  <form id="courseSearchForm">
+    <label for="deptSelect">Department</label>
+    <select id="deptSelect" name="department">
+      <option value="">All Departments</option>
+      <!-- Populate dynamically (e.g., CS, MATH, BIO) -->
+    </select>
+
+    <label for="instructorInput">Instructor</label>
+    <input type="text" id="instructorInput" name="instructor" placeholder="e.g., Smith" />
+
+    <label for="courseNumInput">Course Number</label>
+    <input type="text" id="courseNumInput" name="courseNumber" placeholder="e.g., 201" inputmode="numeric" />
+
+    <label for="modalitySelect">Modality</label>
+    <select id="modalitySelect" name="modality">
+      <option value="">Any</option>
+      <option value="in-person">In-Person</option>
+      <option value="online">Online</option>
+      <option value="hybrid">Hybrid</option>
+    </select>
+
+    <label for="creditsSelect">Credits</label>
+    <select id="creditsSelect" name="credits">
+      <option value="">Any</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+    </select>
+
+    <div>
+      <button type="submit" id="searchBtn">Search</button>
+      <button type="reset" id="resetBtn">Reset</button>
+    </div>
+  </form>
+
+  <!-- Results -->
+  <h2>Results</h2>
+  <div id="resultsContainer">
+    <table id="resultsTable" aria-describedby="resultsHelp">
+      <caption class="sr-only">Matching courses</caption>
+      <thead>
+        <tr>
+          <th scope="col">Course #</th>
+          <th scope="col">Title</th>
+          <th scope="col">Instructor</th>
+          <th scope="col">Credits</th>
+          <th scope="col">Prerequisites</th>
+          <th scope="col">Modality</th>
+          <th scope="col">Max Enroll</th>
+          <th scope="col">Open Seats</th>
+          <th scope="col">Action</th>
+        </tr>
+      </thead>
+      <tbody id="resultsBody">
+        <!-- Rows will be injected here by assets/js/app.js -->
+      </tbody>
+    </table>
+    <p id="resultsHelp">Use filters above and press Search to see available courses.</p>
+    <div id="noResults" hidden>No courses match your filters.</div>
+  </div>
+
+  <!-- Details Panel (inline, simple) -->
+  <h2>Course Details</h2>
+  <div id="courseDetails" hidden>
+    <p><strong id="detailCourseId">CS-101</strong>: <span id="detailTitle">Intro to CS</span></p>
+    <p><strong>Instructor:</strong> <span id="detailInstructor"></span></p>
+    <p><strong>Credits:</strong> <span id="detailCredits"></span></p>
+    <p><strong>Prerequisites:</strong> <span id="detailPrereqs"></span></p>
+    <p><strong>Modality:</strong> <span id="detailModality"></span></p>
+    <p><strong>Max Enrollment:</strong> <span id="detailMax"></span></p>
+    <p><strong>Open Seats:</strong> <span id="detailOpen"></span></p>
+    <p><strong>Description:</strong> <span id="detailDescription"></span></p>
+    <button id="closeDetailsBtn" type="button">Close</button>
+  </div>
+
+  <!-- Templates for JS to clone -->
+  <template id="courseRowTemplate">
+    <tr>
+      <td class="col-id"></td>
+      <td class="col-title"></td>
+      <td class="col-instructor"></td>
+      <td class="col-credits"></td>
+      <td class="col-prereqs"></td>
+      <td class="col-modality"></td>
+      <td class="col-max"></td>
+      <td class="col-open"></td>
+      <td><button class="viewDetailsBtn" type="button">View</button></td>
+    </tr>
+  </template>
+
+  <!-- Status / Messages -->
+  <div id="searchMessage" role="status" aria-live="polite"></div>
+
+</body>
+</html>
