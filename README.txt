@@ -2,7 +2,7 @@ Team Members and What We Did
 - Christian Owusu-achiaw: Student Registration page
 - Riyah Miah: Home Screen and Session Enrollment 
 - Alex Doan: Course Search Screen
-- Evan Arnold: 
+- Evan Arnold: Instructor Schedule Page
 
 
 What Each Page Does
