@@ -1,7 +1,7 @@
 Team Members and What We Did
 - Christian Owusu-achiaw: Student Registration page
 - Riyah Miah: Home Screen and Session Enrollment 
-- Alex Doan: 
+- Alex Doan: Course Search Screen
 - Evan Arnold: 
 
 
