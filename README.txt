@@ -15,9 +15,9 @@ What Each Page Does
 What We Used (HTML, CSS, JS)
 - HTML for the page layout and structure (forms, tables, buttons, etc.)
 - CSS to keep the colors, fonts, and styling consistent
-- JavaScript to handle the logic (sample data, login, enrollment validation)
+- JavaScript to handle the basic logic (sample data, login, enrollment validation)
 
 Design Notes
 - We kept the look and navigation the same across all pages so it feels consistent
-- Validation is all done on the client side since this is just a prototype
-- We used sample data instead of connecting to a real database
+- Validation is all done on the client side since this is just a UI/UX prototype
+- We used sample data where applicable instead of connecting to a real database

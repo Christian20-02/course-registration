@@ -1,3 +1,4 @@
+//Fake login button just for demo purposes
 // Toggle user button text between 'Login' and 'User' on click
 document.addEventListener('DOMContentLoaded', function() {
 	const userBtn = document.getElementById('userNavBtn');

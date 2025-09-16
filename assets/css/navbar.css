@@ -50,6 +50,7 @@
 	display: block;
 }
 
+/*Applicable for login button*/
 .nav-menu > li.user-menu {
   margin-left: auto;
 }
@@ -63,5 +64,8 @@
 	border: none;
 	font-size: 16px;
 	cursor: pointer;
+}
+.nav-menu > li > .userdropbtn:hover {
+	background-color: #575757;
 }
 

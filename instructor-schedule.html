@@ -6,8 +6,8 @@
   <title>Instructor Schedule</title>
   <link rel="stylesheet" href="assets/css/navbar.css" />
   <link rel="stylesheet" href="assets/css/styles.css" />
-  <script defer src="assets/js/app.js"></script>
   <script defer src="assets/js/navbar.js"></script>
+  <script defer src="assets/js/schedulepage.js"></script>
 </head>
 <body>
 
@@ -42,18 +42,19 @@
   <h1>Instructor Schedule</h1>
 
   <!-- Login -->
-  <div>
+  <div id="loginSection">
       <h2>Please Login</h2>
       <input type="email" id="instructorEmail" placeholder="instructor@example.edu" />
       <input type="password" id="instructorPass" placeholder="Password" />
-      <button id="instructorLoginBtn" onclick="fakeLogin()">Log in</button>
+      <button id="instructorLoginBtn">Log in</button>
   </div>
 
   <!-- Classes Taught -->
-  <h2>Sessions</h2>
-  <div id="mySessions">
-    <table>
-  <thead>
+  
+  <div id="mySessions" style="display:none">
+    <h2>Sessions</h2>
+    <table class ="sessionTable">
+    <thead class="sessionHeader">
     <tr>
       <th>Course Code</th>
       <th>Course Name</th>
@@ -61,24 +62,10 @@
       <th>Time</th>
       <th>Room</th>
     </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>INFO465</td>
-      <td>Projects in Information Systems</td>
-      <td>Monday</td>
-      <td>09:00 - 10:30</td>
-      <td>Room 101</td>
-    </tr>
-    <tr>
-      <td>MATH201</td>
-      <td>Calculus II</td>
-      <td>Wednesday</td>
-      <td>11:00 - 12:30</td>
-      <td>Room 202</td>
-    </tr>
-  </tbody>
-</table>
+    </thead>
+    <tbody class="sessionHolder">
+    </tbody>
+    </table>
   </div>
 
 </body>
