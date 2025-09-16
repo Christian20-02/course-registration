@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Session Enrollment - Course Registration</title>
   <link rel="stylesheet" href="assets/css/styles.css" />
+  <script defer src="assets/js/session.js"></script>
 </head>
 <body>
     <!-- Navigation Bar -->
@@ -34,17 +35,42 @@
       </li>
     </ul>
   </nav>
-  
+
   <h1>Course Registration System</h1>
   <h2>Session Enrollment</h2>
-  <p>List of students enrolled in session:</p>
 
-  <!--  a plain list of students -->
-  <ul>
-    <li>Scarlet Frazer - Enrolled</li>
-    <li>Bob Smith - Enrolled</li>
-    <li>Robert Lee - Waitlisted</li>
-    <li>Tom Jerry - Enrolled</li>
-  </ul>
+<!-- Login -->
+  <div id="loginSection">
+      <h2>Please Login</h2>
+      <input type="email" id="instructorEmail" placeholder="instructor@example.edu" />
+      <input type="password" id="instructorPass" placeholder="Password" />
+      <button id="instructorLoginBtn">Log in</button>
+  </div>
+
+
+
+<!--  A Table of students in your sessions -->
+<div id="sessionInfo" style="display:none">
+  <p>List of students enrolled in your session:</p>
+  <label for="sessionFilter">Filter by Session:</label>
+  <select id="sessionFilter">
+    <option value="all">All Sessions</option>
+    <option value="INFO465-02">INFO465-02</option>
+    <option value="MATH201-03">MATH201-03</option>
+  </select>
+  <table class ="sessionTable">
+    <thead class="sessionHeader">
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+      <th>Session</th>
+      <th>Status</th>
+    </tr>
+    </thead>
+    <tbody class="sessionHolder">
+    </tbody>
+    </table>
+</div>
+
 </body>
 </html>

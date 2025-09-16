@@ -9,7 +9,6 @@ document.addEventListener('DOMContentLoaded', function() {
   const loginBtn = document.getElementById('instructorLoginBtn');
   if (loginBtn) {
     loginBtn.addEventListener('click', function() {
-      console.log('Login button clicked');
       renderSessions();
       document.getElementById('loginSection').style.display = 'none';
     });
