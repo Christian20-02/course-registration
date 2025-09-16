@@ -4,20 +4,50 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Instructor Schedule</title>
+  <link rel="stylesheet" href="assets/css/navbar.css" />
   <link rel="stylesheet" href="assets/css/styles.css" />
   <script defer src="assets/js/app.js"></script>
+  <script defer src="assets/js/navbar.js"></script>
 </head>
 <body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <ul class="nav-menu">
+      <li><a href="home-screen.html">Home</a></li>
+      <li class="dropdown">
+        <a href="#" class="dropbtn">Courses</a>
+        <div class="dropdown-content">
+          <a href="course-search.html">Course Search</a>
+          <a href="student-registration.html">Student Registration</a>
+        </div>
+      </li>
+      <li class="dropdown">
+        <a href="#" class="dropbtn">Instructor</a>
+        <div class="dropdown-content">
+          <a href="instructor-schedule.html">Schedule</a>
+          <a href="session-enrollment.html">Session Enrollment</a>
+        </div>
+      </li>
+      <li class="user-menu">
+        <button id="userNavBtn" class="userdropbtn">Login</button>
+        <div id="userDropdown" class="dropdown-content" style="display:none">
+          <a href="#">Profile</a>
+          <a href="#">Logout</a>
+        </div>
+      </li>
+    </ul>
+  </nav>
+
   <h1>Instructor Schedule</h1>
 
   <!-- Login -->
   <div>
-      <h2>Login</h2>
+      <h2>Please Login</h2>
       <input type="email" id="instructorEmail" placeholder="instructor@example.edu" />
       <input type="password" id="instructorPass" placeholder="Password" />
-      <button id="instructorLoginBtn">Log in</button>
+      <button id="instructorLoginBtn" onclick="fakeLogin()">Log in</button>
   </div>
-
 
   <!-- Classes Taught -->
   <h2>Sessions</h2>
@@ -34,7 +64,7 @@
   </thead>
   <tbody>
     <tr>
-      <td>INFO450</td>
+      <td>INFO465</td>
       <td>Projects in Information Systems</td>
       <td>Monday</td>
       <td>09:00 - 10:30</td>
@@ -47,7 +77,6 @@
       <td>11:00 - 12:30</td>
       <td>Room 202</td>
     </tr>
-    <!-- Add more rows as needed -->
   </tbody>
 </table>
   </div>
