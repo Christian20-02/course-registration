@@ -16,3 +16,124 @@ button:hover { background: #3a6fd6; }
   padding: 8px 12px;
   text-align: center;
 }
+
+/* style for base */
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  background-color: #f9f9f9;
+}
+
+/* headings */
+h1, h2 {
+  color: #333;
+}
+
+/* Buttons and background color in blue*/
+button {
+  margin: 8px;
+  padding: 10px 15px;
+  background-color: #4c8bf5;  
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* lighter blue when hovered */
+button:hover {
+  background-color: #3a6fd6; 
+}
+
+/* styling for list of enrolled students */
+ul {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 15px;
+  max-width: 400px;
+}
+
+ul li {
+  padding: 6px 0;
+  border-bottom: 1px solid #eee;
+}
+
+ul li:last-child {
+  border-bottom: none;
+}
+
+/* Navbar Styles */
+.navbar {
+	background-color: #333;
+	overflow: visible;
+	margin-bottom: 24px;
+}
+.nav-menu {
+	all:unset;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+}
+.nav-menu > li {
+	all:unset;
+	position: relative;
+}
+.nav-menu > li > a, .dropbtn {
+	all:unset;
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 16px 20px;
+	text-decoration: none;
+	background: none;
+	border: none;
+	font-size: 16px;
+	cursor: pointer;
+}
+.nav-menu > li > a:hover, .dropdown:hover .dropbtn {
+	background-color: #575757;
+}
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #f9f9f9;
+	min-width: 180px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+	left: 0;
+}
+.dropdown-content a {
+	color: #333;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+	text-align: left;
+}
+.dropdown-content a:hover {
+	background-color: #f1f1f1;
+}
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+
+/*Applicable for login button*/
+.nav-menu > li.user-menu {
+  margin-left: auto;
+}
+.nav-menu > li > .userdropbtn {
+	all:unset;
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 16px 20px;
+	text-decoration: none;
+	background: none;
+	border: none;
+	font-size: 16px;
+	cursor: pointer;
+}
+.nav-menu > li > .userdropbtn:hover {
+	background-color: #575757;
+}

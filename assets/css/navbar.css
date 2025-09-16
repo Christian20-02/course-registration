@@ -55,7 +55,6 @@
 
 /*Applicable for login button*/
 .nav-menu > li.user-menu {
-  all:unset;
   margin-left: auto;
 }
 .nav-menu > li > .userdropbtn {
