@@ -4,13 +4,41 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Home - Course Registration</title>
-  <link rel="stylesheet" href="aasets/css/home-session.css" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
 </head>
 <body>
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <ul class="nav-menu">
+      <li><a href="home-screen.html">Home</a></li>
+      <li class="dropdown">
+        <a href="#" class="dropbtn">Courses</a>
+        <div class="dropdown-content">
+          <a href="course-search.html">Course Search</a>
+          <a href="student-registration.html">Student Registration</a>
+        </div>
+      </li>
+      <li class="dropdown">
+        <a href="#" class="dropbtn">Instructor</a>
+        <div class="dropdown-content">
+          <a href="instructor-schedule.html">Schedule</a>
+          <a href="session-enrollment.html">Session Enrollment</a>
+        </div>
+      </li>
+      <li class="user-menu">
+        <button class="userdropbtn">Login</button>
+        <div class="dropdown-content" style="display:none">
+          <a href="#">Profile</a>
+          <a href="#">Logout</a>
+        </div>
+      </li>
+    </ul>
+  </nav>
+
   <!--Heading and subtitles welcoming user-->
   <h1>Course Registration System</h1>
   <h2>Home</h2>
-  <p>Welcome! Choose an option:</p>
+  <p>Welcome! Please navigate to your desired page:</p>
 
   <!--Navigation to links for each option-->
   <nav>
