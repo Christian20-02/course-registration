@@ -5,19 +5,41 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Course Search</title>
   <!-- Keep head includes consistent with other screens -->
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <link rel="stylesheet" href="assets/css/navbar.css" />
   <script defer src="app.js"></script>
 </head>
 <body>
-  <h1>Course Search</h1>
 
-  <!-- Optional: simple nav to other screens for parity during demos -->
-  <nav aria-label="Primary">
-    <a href="home-screen.html">Home</a>
-    <a href="course-search.html" aria-current="page">Course Search</a>
-    <a href="student-registration.html">Student Registration</a>
-    <a href="instructor-schedule.html">Instructor Schedule</a>
+<!-- Navigation Bar -->
+  <nav class="navbar">
+    <ul class="nav-menu">
+      <li><a href="home-screen.html">Home</a></li>
+      <li class="dropdown">
+        <a href="#" class="dropbtn">Courses</a>
+        <div class="dropdown-content">
+          <a href="course-search.html">Course Search</a>
+          <a href="student-registration.html">Student Registration</a>
+        </div>
+      </li>
+      <li class="dropdown">
+        <a href="#" class="dropbtn">Instructor</a>
+        <div class="dropdown-content">
+          <a href="instructor-schedule.html">Schedule</a>
+          <a href="session-enrollment.html">Session Enrollment</a>
+        </div>
+      </li>
+      <li class="user-menu">
+        <button class="userdropbtn">Login</button>
+        <div class="dropdown-content" style="display:none">
+          <a href="#">Profile</a>
+          <a href="#">Logout</a>
+        </div>
+      </li>
+    </ul>
   </nav>
+
+  <h1>Course Search</h1>
 
   <!-- Filters -->
   <h2>Find a Course</h2>
